@@ -1,0 +1,229 @@
+/* Estilos globais da página */
+body {
+  font-family: Arial, sans-serif; /* Letra Arial com alternativas genéricas */
+  color: #1d1148;               /* Cor do texto */
+  background-color: #f7f7f9;    /* Cor do fundo da página */
+  margin: 0;                     
+}
+
+/* Estilo do contentor principal */
+.logo {
+  max-width: 1000px;            /* Largura máxima de 1000px */
+  margin: 0 auto;               /* Centrado horizontalmente */
+  padding: 20px;                /* Opcional: espaçamento interno para o conteúdo não colar nas bordas */
+  line-height: 1.6;             /* Altura_Espaçamento entre linhas */
+  margin: 0;                    /* Remove as margens padrão do navegador */
+}
+
+
+/* cabeçalho */
+ .header {
+    display: flex;
+    justify-content: space-between; /* Empurra um item para cada extremidade */
+    align-items: center;            /* Alinha verticalmente ao centro */
+    padding: 5px 10px;             /* Espaçamento interno */
+    background-color: #ffffff;      /* Fundo branco  */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* sombra suave */
+    
+ }
+
+/* Menu com os links */
+.menu {
+    display: flex;
+    gap: 24px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #1d1148;
+    font-size: 10px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+/* Efeito ao passar o rato por cima dos links */
+.menu a:hover {
+    color: #e40084;
+}
+
+.logo-pink {
+  color: #e40084; /* Cor rosa de destaque */
+  /*display: inline;*/
+}
+
+/* --- BANNER --- */
+.banner {
+  background-color: #1d1148;
+  color: #ffffff;
+  text-align: center;
+  padding: 48px 20px;
+}
+
+.banner-button {
+  background-color: #e40084;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+
+/* --- Conteudo principal (LOGO A SEGUIR AO BANNER) --- */
+
+/* Contentor geral para centrar o conteúdo principal da página (exceto cabeçalho/banner/rodapé) */
+.page-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Cartões */
+.card {
+  box-sizing: border-box;
+  max-width: 300px;
+  max-height: 300px;
+  padding: 16px;
+  border: 3px solid #1d1148;
+  border-radius: 20px;
+  box-shadow: 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  text-align: center;
+  position:relative
+}
+
+.card img {
+  padding: 16px;
+  border: 3px; /* Para botões */
+  padding: 5px 5px; /* Para dar proporção ao botão */
+  width: 150px; /* imagem do cartão*/
+  height: 150px; /* imagem do cartão*/
+  margin-bottom: 12px;
+  size-adjust: auto;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: -80px auto; /* Espaçamento entre o banner e os cartões */
+  padding: 20px;
+  
+}
+
+.card-container h2 {
+  width: auto;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #1d1148;
+}
+
+/* Contentor da imagem */
+.imagem-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tag Novo */
+.tag-novo {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  background-color: #e40084;
+  color: white;
+
+  padding: 7px 14px;
+  border-radius: 20px;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* animais para adoção - titulo*/
+.animais{
+   /* Afastamento: 40px no topo, 0 à direita, 40px no rodapé, 40px da borda esquerda */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px; /* Alinha à esquerda e dá o afastamento da margem */
+
+}
+
+/* adotar*/
+.adotar{
+    /* Afastamento: 40px no topo, 0 à direita, 40px no rodapé, 40px da borda esquerda */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px; /* Alinha à esquerda e dá o afastamento da margem */
+}
+
+.viisitas{
+    margin-bottom: 50px;
+}
+
+/* tabela*/
+table {
+width: 100%;
+  max-width: 440px;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+th, td {
+  padding: 14px 16px;
+  border: 1px solid #dcdcdc; /* Cor suave para as bordas das células */
+  text-align: left;
+  font-size: 0.95rem;
+  
+}
+
+th {
+  background-color: #1d1148;
+  color: #ffffff;
+
+}
+
+
+/* Contactos*/
+.contact{
+    background-color: white;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    color: #1d1148;
+    padding: 20px;     /* Conteúdo interno não colar nas bordas */
+    /* Afastamento: 40px no topo, 0 à direita, 40px no rodapé, 40px da borda esquerda */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px; /* Alinha à esquerda e dá o afastamento da margem */
+}
+.contact-fields{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sent-button {
+  background-color: #e40084;
+  color: #ffffff;
+  border-radius: 20px; 
+  border: none; /* Geralmente útil para botões */
+  padding: 5px 5px; /* Para dar proporção ao botão */
+  cursor: pointer;
+}
+
+/* rodape*/
+.footer{
+  background-color: #1d1148;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+}
