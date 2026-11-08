@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CESAE Viagens</title>
+    <!-- Bootstrap 5.3.8 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap Icons 1.13.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet" integrity="sha384-CK2SzKma4jA5H/MXDUU7i1TqZlCFaD4T01vtyDFvPlD97JQyS+IsSh1nI2EFbpyk" crossorigin="anonymous">
+</head>
+<body class="bg-light text-body">
+
+    <!-- 1. CABEÇALHO / NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center fw-bold fs-5" href="#">
+                <i class="bi bi-airplane me-2 fs-4"></i> CESAE Viagens
+            </a>
+
+    
+
+    
+
+    <!-- 3. PORQUÊ A CESAE VIAGENS? -->
+    <section class="py-5 bg-white">
+        <div class="container py-4">
+            <h2 class="text-center fw-bold mb-5 fs-3">Porquê a CESAE Viagens?</h2>
+            <div class="row g-4 text-center">
+                <!-- Cartão 1 -->
+                <div class="col-md-4">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary rounded-circle p-3 mb-3" style="width: 64px; height: 64px;">
+                        <i class="bi bi-geo-alt fs-4"></i>
+                    </div>
+                    <h3 class="h5 fw-bold mb-2">Destinos à medida</h3>
+                    <p class="text-secondary small px-lg-3">Escolhemos o roteiro consigo, do primeiro café ao último pôr do sol.</p>
+                </div>
+                <!-- Cartão 2 -->
+                <div class="col-md-4">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary rounded-circle p-3 mb-3" style="width: 64px; height: 64px;">
+                        <i class="bi bi-shield-check fs-4"></i>
+                    </div>
+                    <h3 class="h5 fw-bold mb-2">Viaja em segurança</h3>
+                    <p class="text-secondary small px-lg-3">Seguro incluído e apoio 24 horas, em português, onde quer que esteja.</p>
+                </div>
+                <!-- Cartão 3 -->
+                <div class="col-md-4">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary rounded-circle p-3 mb-3" style="width: 64px; height: 64px;">
+                        <i class="bi bi-calendar-check fs-4"></i>
+                    </div>
+                    <h3 class="h5 fw-bold mb-2">Datas flexíveis</h3>
+                    <p class="text-secondary small px-lg-3">Altera a data da viagem até 15 dias antes, sem custos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="lisboa">
+    </div>
+    <div class="carousel-item">
+      <img src="https://wallpaperaccess.com/full/1332221.jpg" class="d-block w-100" alt="porto">
+    </div>
+    <div class="carousel-item">
+      <img src="https://th.bing.com/th/id/R.889848d1df260d35e4ceec72c8d2383c?rik=%2fr%2brFM4z3k7Tiw&riu=http%3a%2f%2fcdn.theculturetrip.com%2fwp-content%2fuploads%2f2016%2f02%2fBenagil_Cave_Algarve.jpg&ehk=T0Bbouj34hq2ZZs52HgULvM1YO8%2bkALAGEYTRN1vnC8%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="Porto">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+    <!-- 4. DESTINOS EM DESTAQUE (CARROSSEL) -->
+    <section id="destinos" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4 fs-3">Destinos em destaque</h2>
+            <div id="carouselDestinos" class="carousel slide rounded-4 overflow-hidden shadow-sm" data-bs-ride="carousel">
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselDestinos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselDestinos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselDestinos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <!-- Imagens -->
+                <div class="carousel-inner" style="height: 420px;">
+                    <!-- Slide 1 - Lisboa -->
+                    <div class="carousel-item active h-100">
+                        <img src="https://images.unsplash.com/photo-1513735706072-982a97bd0914?auto=format&fit=crop&w=1400&q=80" class="d-block w-100 h-100 object-fit-cover" alt="Lisboa">
+                        <div class="carousel-caption text-start bg-dark bg-opacity-50 p-3 p-md-4 rounded-3 bottom-0 mb-4 me-auto ms-4" style="max-width: 90%;">
+                            <h3 class="fw-bold h4 mb-1">Lisboa</h3>
+                            <p class="mb-0 small text-white text-opacity-50">Sete colinas, miradouros e pastéis de nata.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 - Porto -->
+                    <div class="carousel-item h-100">
+                        <img src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=1400&q=80" class="d-block w-100 h-100 object-fit-cover" alt="Porto">
+                        <div class="carousel-caption text-start bg-dark bg-opacity-50 p-3 p-md-4 rounded-3 bottom-0 mb-4 me-auto ms-4" style="max-width: 90%;">
+                            <h3 class="fw-bold h4 mb-1">Porto</h3>
+                            <p class="mb-0 small text-white text-opacity-50">Vinho do Porto, caves históricas e a Ribeira.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 - Algarve -->
+                    <div class="carousel-item h-100">
+                        <img src="https://images.unsplash.com/photo-1548707309-dcebeab9ec98?auto=format&fit=crop&w=1400&q=80" class="d-block w-100 h-100 object-fit-cover" alt="Algarve">
+                        <div class="carousel-caption text-start bg-dark bg-opacity-50 p-3 p-md-4 rounded-3 bottom-0 mb-4 me-auto ms-4" style="max-width: 90%;">
+                            <h3 class="fw-bold h4 mb-1">Algarve</h3>
+                            <p class="mb-0 small text-white text-opacity-50">Praias douradas, falésias e águas cristalinas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seta Anterior -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestinos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <!-- Seta Seguinte -->
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDestinos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Seguinte</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. OS NOSSOS PLANOS -->
+    <section id="planos" class="py-5 bg-white">
+        <div class="container py-3">
+            <h2 class="text-center fw-bold mb-5 fs-3">Os nossos planos</h2>
+            <div class="row g-4 align-items-center">
+                <!-- Plano Essencial -->
+                <div class="col-md-4">
+                    <div class="card h-100 text-center border rounded-3 shadow-sm">
+                        <div class="card-header bg-transparent border-0 pt-4">
+                            <h3 class="h6 text-secondary fw-normal mb-0">Essencial</h3>
+                        </div>
+                        <div class="card-body d-flex flex-column pt-1 pb-4">
+                            <h4 class="display-6 fw-normal mb-0">199 €</h4>
+                            <p class="text-body-secondary small mb-3">por pessoa</p>
+                            <ul class="list-unstyled my-3 small text-secondary lh-lg">
+                                <li>Voos e alojamento</li>
+                                <li>Seguro de viagem</li>
+                                <li>Apoio por email</li>
+                            </ul>
+                            <div class="mt-auto pt-3">
+                                <a href="#proposta" class="btn btn-outline-primary w-100">Escolher</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plano Família (Destaque) -->
+                <div class="col-md-4">
+                    <div class="card h-100 text-center border-primary rounded-3 shadow">
+                        <div class="card-header bg-primary text-white py-2">
+                            <h3 class="h6 mb-0 fw-normal">Família (mais popular)</h3>
+                        </div>
+                        <div class="card-body d-flex flex-column pt-3 pb-4">
+                            <h4 class="display-6 fw-normal mb-0">349 €</h4>
+                            <p class="text-body-secondary small mb-3">por pessoa</p>
+                            <ul class="list-unstyled my-3 small text-secondary lh-lg">
+                                <li>Tudo do Essencial</li>
+                                <li>Transfers incluídos</li>
+                                <li>Atividades para crianças</li>
+                                <li>Apoio 24 horas</li>
+                            </ul>
+                            <div class="mt-auto pt-3">
+                                <a href="#proposta" class="btn btn-primary w-100">Escolher</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plano Premium -->
+                <div class="col-md-4">
+                    <div class="card h-100 text-center border rounded-3 shadow-sm">
+                        <div class="card-header bg-transparent border-0 pt-4">
+                            <h3 class="h6 text-secondary fw-normal mb-0">Premium</h3>
+                        </div>
+                        <div class="card-body d-flex flex-column pt-1 pb-4">
+                            <h4 class="display-6 fw-normal mb-0">599 €</h4>
+                            <p class="text-body-secondary small mb-3">por pessoa</p>
+                            <ul class="list-unstyled my-3 small text-secondary lh-lg">
+                                <li>Tudo da Família</li>
+                                <li>Hotéis de 5 estrelas</li>
+                                <li>Guia privado</li>
+                                <li>Cancelamento flexível</li>
+                            </ul>
+                            <div class="mt-auto pt-3">
+                                <a href="#proposta" class="btn btn-outline-primary w-100">Escolher</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. PERGUNTAS FREQUENTES (ACCORDION) -->
+    <section id="questions" class="py-5">
+        <div class="container" style="max-width: 800px;">
+            <h2 class="text-center fw-bold mb-4 fs-3">Perguntas frequentes</h2>
+
+            <div class="accordion border rounded-3 overflow-hidden bg-white shadow-sm" id="accordionQuestions">
+                <!-- Item 1 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button bg-primary bg-opacity-10 text-primary fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Posso pagar em prestações?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionQuestions">
+                        <div class="accordion-body text-secondary small">
+                            Sim. Dividimos o valor em até 6 prestações, sem juros.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            O que acontece se eu precisar de cancelar?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionQuestions">
+                        <div class="accordion-body text-secondary small">
+                            Poderá cancelar sem custos até 15 dias antes do início da viagem dependendo do plano contratado.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            As crianças pagam o mesmo?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionQuestions">
+                        <div class="accordion-body text-secondary small">
+                            Crianças até aos 12 anos beneficiam de um desconto especial até 50% em todos os pacotes familiares.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FORMULÁRIO "PEÇA UMA PROPOSTA" -->
+    <section id="proposta" class="py-5 bg-white">
+        <div class="container" style="max-width: 800px;">
+            <h2 class="text-center fw-bold mb-4 fs-3">Peça uma proposta</h2>
+
+            <form onsubmit="event.preventDefault();">
+                <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                        <label for="nome" class="form-label small text-secondary">Nome</label>
+                        <input type="text" class="form-control" id="nome">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label small text-secondary">Email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                </div>
+
+                <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                        <label for="destino" class="form-label small text-secondary">Destino</label>
+                        <select class="form-select" id="destino">
+                            <option selected>Lisboa</option>
+                            <option value="porto">Porto</option>
+                            <option value="algarve">Algarve</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="pessoas" class="form-label small text-secondary">Número de pessoas</label>
+                        <input type="number" class="form-control" id="pessoas" value="2" min="1">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label small text-secondary">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" rows="3"></textarea>
+                </div>
+
+                <div class="mb-4 form-check">
+                    <input type="checkbox" class="form-check-input" id="consentimento">
+                    <label class="form-check-label small text-secondary" for="consentimento">
+                        Aceito ser contactado(a) com a proposta
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 py-2 fw-medium">Enviar pedido</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 8. RODAPÉ -->
+    <footer class="bg-dark text-white pt-5 pb-4 border-top border-secondary border-opacity-25">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <!-- Coluna 1: Logo & Info -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-2 d-flex align-items-center">
+                        <i class="bi bi-airplane me-2 fs-5"></i> CESAE Viagens
+                    </h5>
+                    <p class="text-secondary small mb-0">Viagens à medida desde 2010.</p>
+                </div>
+
+                <!-- Coluna 2: Ligações -->
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Ligações</h6>
+                    <ul class="list-unstyled small lh-lg mb-0">
+                        <li><a href="#planos" class="text-secondary text-decoration-none">Planos</a></li>
+                        <li><a href="#questions" class="text-secondary text-decoration-none">Perguntas frequentes</a></li>
+                        <li><a href="#proposta" class="text-secondary text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                 <!-- Coluna 3: Newsletter & Redes Sociais -->
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Newsletter</h6>
+                    <form class="input-group mb-3" onsubmit="event.preventDefault();">
+                        <span class="input-group-text bg-white border-end-0">
+                            <i class="bi bi-envelope text-secondary"></i>
+                        </span>
+                        <input type="email" class="form-control border-start-0" placeholder="O seu email" aria-label="O seu email">
+                        <button class="btn btn-warning fw-medium px-3" type="button">Subscrever</button>
+                    </form>
+                    <div class="d-flex gap-3 text-white fs-5">
+                        <a href="#" class="text-white text-opacity-50 text-decoration-none"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white text-opacity-50 text-decoration-none"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white text-opacity-50 text-decoration-none"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="text-center text-secondary small">
+                &copy; 2026 CESAE Viagens
+            </div>
+        </div>
+    </footer>
+
+      <!-- Bootstrap 5.3.8 JS Bundle com Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
